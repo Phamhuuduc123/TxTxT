@@ -18,20 +18,20 @@
       display: flex;
 
  
-      gap: 12px;
+      gap: 15px;
 
       background: rgba(255,255,255,0.05);
-      border-radius: 16px;
+      border-radius: 45px;
       backdrop-filter: blur(10px);
       overflow-x: auto;
-      width: 1400px;
-      height: 3cm;
+      width: 100%;
+      height: 120px;
       scrollbar-width: thin;
       scrollbar-color: blueviolet transparent;
     }
 
     #button-container::-webkit-scrollbar {
-      height: 3cm;
+      height: 120px;
       width:1024px;
     }
 
@@ -41,56 +41,56 @@
 
     #button-container::-webkit-scrollbar-thumb {
       background-color: red;
-      border-radius: 10px;
+      border-radius: 50px;
     }
 
     button {
 
-      padding: 12px 20px;
+      padding: 12px 12px;
       border: 2px solid transparent;
-      border-radius: 8px;
+      border-radius: 50px;
       background-color: blueviolet;
       color: white;
-      font-size: 14px;
-      font-weight: 600;
+      font-size: 50px;
+      font-weight: 300;
       cursor: pointer;
       transition: transform 0.15s, box-shadow 0.15s, background-color 0.2s;
       box-sizing: border-box;
-      height:3cm;
-      width: 150px;
+      min-width :120px;
+      min-height: 100px;
     }
 
     button:hover {
-      transform: translateY(-2px);
+
       box-shadow: 0 6px 18px rgba(0,0,0,0.3);
     }
 
     button.active {
       border-color: white;
       box-shadow: 0 0 14px currentColor;
-      transform: scale(1.05);
+
     }
   </style>
 </head>
 <body>
 
 <div id="button-container">
-  <button data-color="rgb(205, 92, 92)"   onclick="handleClick(this)">Btn 0</button>
-  <button data-color="rgb(250, 128, 114)" onclick="handleClick(this)">Btn 1</button>
-  <button data-color="rgb(255, 160, 122)" onclick="handleClick(this)">Btn 2</button>
-  <button data-color="rgb(255, 192, 203)" onclick="handleClick(this)">Btn 3</button>
-  <button data-color="rgb(255, 105, 180)" onclick="handleClick(this)">Btn 4</button>
-  <button data-color="rgb(219, 112, 147)" onclick="handleClick(this)">Btn 5</button>
-  <button data-color="rgb(255, 160, 122)" onclick="handleClick(this)">Btn 6</button>
-  <button data-color="rgb(255, 127, 80)"  onclick="handleClick(this)">Btn 7</button>
-  <button data-color="rgb(255, 140, 0)"   onclick="handleClick(this)">Btn 8</button>
-  <button data-color="rgb(255, 165, 0)"   onclick="handleClick(this)">Btn 9</button>
-  <button data-color="rgb(255, 215, 0)"   onclick="handleClick(this)">Btn 10</button>
-  <button data-color="rgb(255, 228, 181)" onclick="handleClick(this)">Btn 11</button>
-  <button data-color="rgb(189, 183, 107)" onclick="handleClick(this)">Btn 12</button>
-  <button data-color="rgb(230, 230, 250)" onclick="handleClick(this)">Btn 13</button>
-  <button data-color="rgb(216, 191, 216)" onclick="handleClick(this)">Btn 14</button>
-  <button data-color="rgb(147, 112, 219)" onclick="handleClick(this)">Btn 15</button>
+  <button data-color="rgb(205, 92, 92)"   onclick="handleClick(this)">00</button>
+  <button data-color="rgb(250, 128, 114)" onclick="handleClick(this)">01</button>
+  <button data-color="rgb(255, 160, 122)" onclick="handleClick(this)">02</button>
+  <button data-color="rgb(255, 192, 203)" onclick="handleClick(this)">03</button>
+  <button data-color="rgb(255, 105, 180)" onclick="handleClick(this)">04</button>
+  <button data-color="rgb(219, 112, 147)" onclick="handleClick(this)">05</button>
+  <button data-color="rgb(255, 160, 122)" onclick="handleClick(this)">06</button>
+  <button data-color="rgb(255, 127, 80)"  onclick="handleClick(this)">07</button>
+  <button data-color="rgb(255, 140, 0)"   onclick="handleClick(this)">08</button>
+  <button data-color="rgb(255, 165, 0)"   onclick="handleClick(this)">09</button>
+  <button data-color="rgb(255, 215, 0)"   onclick="handleClick(this)">10</button>
+  <button data-color="rgb(255, 228, 181)" onclick="handleClick(this)">11</button>
+  <button data-color="rgb(189, 183, 107)" onclick="handleClick(this)">12</button>
+  <button data-color="rgb(230, 230, 250)" onclick="handleClick(this)">13</button>
+  <button data-color="rgb(216, 191, 216)" onclick="handleClick(this)">14</button>
+  <button data-color="rgb(147, 112, 219)" onclick="handleClick(this)">15</button>
 </div>
 
 <script>
