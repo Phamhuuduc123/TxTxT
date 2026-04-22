@@ -1,0 +1,287 @@
+
+
+/* The Container */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+header {
+      background: #000;
+      padding-top: 25px;
+      
+
+      text-align: center;
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 150px;
+      
+}
+
+header h1 {
+      font-family: 'Arial Black', Arial, sans-serif;
+      font-size: clamp(40px, 12vw, 110px);
+      font-weight: 900;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: transparent;
+      -webkit-text-stroke: 2px #0c68138a;
+      
+      line-height: 0.2;
+}
+
+footer {
+      background: #0a0a0a;
+      border-top: 2px solid gray;
+      padding: 3rem 2.5rem 2rem;
+    }
+.footer-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+.m_content{
+
+    justify-content: center;
+    display: flex;
+    padding: 1.5rem 1.5rem 1.5rem 1.5em;
+}
+.content{
+    max-width: 680px ;
+    width:100%;
+    min-height: 250px;
+
+    padding: 1rem 1rem 1rem 1rem; 
+
+    border:2px solid;
+    border-color:gray;
+}
+p {
+      font-size: 1.08rem;
+      line-height: 2rem;
+      color: green;
+      margin-bottom: 1.6rem;
+    }
+
+.spacer{
+    width: 100%;
+    height: 25px;
+    background-color: black;
+}
+.spacer-1{
+    width: 100%;
+    height: 20px;
+    background-color: black;
+}
+/* The parent viewport div */
+.viewport-wrapper-1,
+.viewport-wrapper {
+    width: 100%;
+    height: auto;
+    background-color:orange;
+    border-bottom: 2px solid #ddd;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow-x: hidden;
+ 
+    /* Centering the container inside the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ /* Handles overflow if buttons exceed 200px */
+}
+.viewport-wrapper-2 {
+    width: 100%;
+    height: auto;
+    background-color:black;
+    /*border-bottom: 2px solid #ddd;
+
+    overflow-x: hidden;
+    
+    /* Centering the container inside the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ /* Handles overflow if buttons exceed 200px */
+}
+/* The button container */
+.container-1,
+.container {
+    display: flex;
+    background-color: gray;
+
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    height: 100px;
+    border-radius: 45px;
+    overflow-x: auto;
+    /*-webkit-overflow-scrolling: touch;*/
+
+} 
+.container-2 {
+    display: flex;
+    background-color: black;
+
+    align-items: center;
+    gap: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: auto;
+    
+    overflow-x: auto;
+    /*-webkit-overflow-scrolling: touch;*/
+
+} 
+.table_view{
+ display: grid;
+ width:100%;
+ justify-content: flex-start;
+ overflow-x: auto;
+}
+
+button {
+    padding: 8px 16px;
+    height: 60px;
+    min-width: 100px;
+    border: 2px solid gray;
+    background-color: purple;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 15px;
+    transition: all 0.2s ease;
+    color:white;
+}
+.btn-a{
+    border-radius: 0px;
+    border-top: 2px solid gray;
+    border-left: 2px solid gray;
+    border-right: 2px solid gray;
+    border-bottom: 1px solid gray;
+    background-color: black;
+    height:30px;
+    color :gray;
+    font-size: 15px;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; 
+    
+}
+.btn-b{
+    border-radius: 0px;
+    border-top: 1px solid gray;
+    border-left: 2px solid gray;
+    border-right: 2px solid gray;
+    border-bottom: 2px solid gray;
+    background-color: black;
+    height:45px;
+    color :gray;
+    font-size: 15px;
+}
+.mmm{
+    justify-content: center;
+    width :100%;
+
+    display:grid;
+}
+.mmm-1{
+    justify-content: center;
+    width :100%;
+    overflow-x: auto;
+    display:grid;
+    justify-content: flex-start;
+}
+/* Active class applied via JavaScript */
+button.active {
+   /* color: blueviolet;*/
+
+    background-color: black;
+}
+.tables-container_final {
+
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: flex-start;
+    overflow-x: auto;
+
+}
+.tables-container {
+
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    /*justify-content: flex-start;*/
+    /*overflow-x: auto;*/
+
+}
+.tb_head{
+    background-color: gray;
+}
+.data-table {
+    border-collapse: collapse;
+
+   
+}
+
+.data-table th,
+.data-table td {
+    border: 1px solid #ccc;
+    padding: 6px;
+    text-align: center;
+    color:white;
+    font-size: 14px;
+    min-width:30px;
+    width: 50px;
+}
+
+.data-table thead {
+    background-color: gray;
+    font-size: 12px;
+}
+.final-tab{
+    border-collapse: collapse;
+
+   
+}
+.data-tab {
+    border-collapse: collapse;
+
+   
+}
+
+.nnn{
+    display: grid;
+    justify-content: center;
+}
+.final-tab th,
+.final-tab td,
+
+.data-tab td {
+    border: 1px solid #ccc;
+    padding: 6px;
+    text-align: center;
+    color:white;
+    font-size: 14px;
+    width:50px;
+    min-width: 30px;
+
+}
+.final-tab thead {
+    background-color: gray;
+    color: yellow;
+    border: black;
+    letter-spacing: 2px;
+
+}
+.data-tab th {
+    background-color: black;
+    color:black;
+    font-size: 14px;
+    width:50px;
+    min-width: 30px;
+    
+}

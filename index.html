@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Centering Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <h1>NP Problem</h1>
+  </header>
+   <div class="m_content">
+   <div class="content">
+    <p>
+      There is a class of problem that easy to verify an answer, but very difficult to find it answer.
+    </p>
+
+    <p>
+     And it bring to us a question. Is it possible or is it exist a method to somehow figure out the answer
+     faster than try all possible combination. Because it seem like the answer is just hidden in the code somehow.
+
+    </p>
+
+    <p>
+      This table below construct an uniform np problem. As many np problem could reduce to it.
+      The solution to this problem is value of (a ,b ,c ,d ,e ,f ,g ,h ,i ,j ,k ,l ,m ,n ,o ,p) that all 16 
+      table return 1.
+    </p>  
+    <p> 
+      With 16 input, there are 256 possible input combination. And in 16 tables, input is group to 4x4 group.
+      Each group have 4 variables, so it 16 possible combination, then 16 combination get separate into 2 group return 0 or 1.
+      Then 4 group input also became 4 variable and 16 combinations of it also got separate to 2 group of return value 0 or 1.
+    </p>
+    <p>
+      The tables itself is a compression. Instead of label 256 possible combination individually. 
+      That take around 256 variables, indirect variables (group tables) take around 80 variables.
+    </p>
+    <p>
+      Find value that 16 tables return 1. Also mean that find intersection between compressions.
+    </p>
+   </div>
+   </div>
+   <div class="spacer"></div>
+
+    <div class="viewport-wrapper-2">
+        <div id="button-container" class="container-2">
+              <button data-color="rgb(205, 92, 92)"   onclick="handleClick(this)">00</button>
+              <button data-color="rgb(250, 128, 114)" onclick="handleClick(this)">01</button>
+              <button data-color="rgb(255, 160, 122)" onclick="handleClick(this)">02</button>
+              <button data-color="rgb(255, 192, 203)" onclick="handleClick(this)">03</button>
+              <button data-color="rgb(255, 105, 180)" onclick="handleClick(this)">04</button>
+              <button data-color="rgb(219, 112, 147)" onclick="handleClick(this)">05</button>
+              <button data-color="rgb(255, 160, 122)" onclick="handleClick(this)">06</button>
+              <button data-color="rgb(255, 127, 80)"  onclick="handleClick(this)">07</button>
+              <button data-color="rgb(255, 140, 0)"   onclick="handleClick(this)">08</button>
+              <button data-color="rgb(255, 165, 0)"   onclick="handleClick(this)">09</button>
+              <button data-color="rgb(255, 215, 0)"   onclick="handleClick(this)">10</button>
+              <button data-color="rgb(255, 228, 181)" onclick="handleClick(this)">11</button>
+              <button data-color="rgb(189, 183, 107)" onclick="handleClick(this)">12</button>
+              <button data-color="rgb(230, 230, 250)" onclick="handleClick(this)">13</button>
+              <button data-color="rgb(216, 191, 216)" onclick="handleClick(this)">14</button>
+              <button data-color="rgb(147, 112, 219)" onclick="handleClick(this)">15</button>
+            </div>
+    </div>
+  
+    <div class="spacer-1"></div>
+    <div class="mmm">
+    <div class="mmm-1">
+    <div class="viewport-wrapper-2">
+    <div id="button-container-1" class="container-2">
+              <button class="btn-a" data-color="rgb(205, 92, 92)" >A</button>
+              <button class="btn-a" data-color="rgb(250, 128, 114)" >B</button>
+              <button class="btn-a" data-color="rgb(255, 160, 122)" >C</button>
+              <button class="btn-a" data-color="rgb(255, 192, 203)" >D</button>
+              <button  class="btn-a" data-color="rgb(255, 105, 180)" >E</button>
+              <button class="btn-a" data-color="rgb(219, 112, 147)" >F</button>
+              <button class="btn-a"  data-color="rgb(255, 160, 122)" >G</button>
+              <button class="btn-a" data-color="rgb(255, 127, 80)"  >H</button>
+              <button class="btn-a" data-color="rgb(255, 140, 0)"   >I</button>
+              <button class="btn-a"  data-color="rgb(255, 165, 0)"   >J</button>
+              <button class="btn-a" data-color="rgb(255, 215, 0)"   >K</button>
+              <button class="btn-a" data-color="rgb(255, 228, 181)" >L</button>
+              <button class="btn-a" data-color="rgb(189, 183, 107)" >M</button>
+              <button class="btn-a" data-color="rgb(230, 230, 250)" >N</button>
+              <button class="btn-a" data-color="rgb(216, 191, 216)" >O</button>
+              <button class="btn-a" data-color="rgb(147, 112, 219)" >P</button>
+    </div> 
+    </div> 
+    <div class="viewport-wrapper-2">     
+    <div id="button-container-1" class="container-2">
+              <button class="btn-b" data-color="rgb(205, 92, 92)"   onclick="handleClick_1(this,0)">0</button>
+              <button class="btn-b" data-color="rgb(250, 128, 114)" onclick="handleClick_1(this,1)">0</button>
+              <button class="btn-b" data-color="rgb(255, 160, 122)" onclick="handleClick_1(this,2)">0</button>
+              <button class="btn-b" data-color="rgb(255, 192, 203)" onclick="handleClick_1(this,3)">0</button>
+              <button class="btn-b" data-color="rgb(255, 105, 180)" onclick="handleClick_1(this,4)">0</button>
+              <button class="btn-b" data-color="rgb(219, 112, 147)" onclick="handleClick_1(this,5)">0</button>
+              <button class="btn-b" data-color="rgb(255, 160, 122)" onclick="handleClick_1(this,6)">0</button>
+              <button class="btn-b" data-color="rgb(255, 127, 80)"  onclick="handleClick_1(this,7)">0</button>
+              <button class="btn-b" data-color="rgb(255, 140, 0)"   onclick="handleClick_1(this,8)">0</button>
+              <button class="btn-b" data-color="rgb(255, 165, 0)"   onclick="handleClick_1(this,9)">0</button>
+              <button class="btn-b" data-color="rgb(255, 215, 0)"   onclick="handleClick_1(this,10)">0</button>
+              <button class="btn-b" data-color="rgb(255, 228, 181)" onclick="handleClick_1(this,11)">0</button>
+              <button class="btn-b" data-color="rgb(189, 183, 107)" onclick="handleClick_1(this,12)">0</button>
+              <button class="btn-b" data-color="rgb(230, 230, 250)" onclick="handleClick_1(this,13)">0</button>
+              <button class="btn-b" data-color="rgb(216, 191, 216)" onclick="handleClick_1(this,14)">0</button>
+              <button class="btn-b" data-color="rgb(147, 112, 219)" onclick="handleClick_1(this,15)">0</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="spacer"></div>    
+    <div class="mmm">
+   <div class="table_view">
+   <div class="tables-container">
+    <!-- 4 tables -->
+    <table class="data-table">
+        <thead>
+            <tr><th>A</th><th>B</th><th>C</th><th>D</th></tr>
+        </thead>
+        <tbody>
+            <!-- 8 rows -->
+            <tr><td></td><td></td><td></td><td></td><td>0</td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+    </table>
+
+    <!-- Duplicate same table structure 3 more times -->
+    <table class="data-table"> <!-- table 2 -->
+        <thead>
+            <tr><th>A</th><th>B</th><th>C</th><th>D</th></tr>
+        </thead>
+
+        <tbody>
+            <!-- 8 rows -->
+            <tr><td></td><td></td><td></td><td></td><td>0</td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+    </table>
+
+    <table class="data-table"> <!-- table 3 -->
+        <thead>
+            <tr><th>A</th><th>B</th><th>C</th><th>D</th></tr>
+        </thead>
+
+        <tbody>
+            <!-- 8 rows -->
+            <tr><td></td><td></td><td></td><td></td><td>0</td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+    </table>
+
+    <table class="data-table"> <!-- table 4 -->
+        <thead>
+            <tr><th>A</th><th>B</th><th>C</th><th>D</th></tr>
+        </thead>
+
+        <tbody>
+            <!-- 8 rows -->
+            <tr><td></td><td></td><td></td><td></td><td>0</td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+    </table>
+    </div>
+    
+<!---->
+   <div class="tables-container">
+    <!-- 4 tables -->
+    <table class="data-tab">
+        <thead>
+            <tr><th>A</th><th>B</th><th>C</th><th>D</th></tr>
+        </thead>        
+        <tbody>
+            <!-- 8 rows -->
+            <tr><td></td><td></td><td></td><td></td><td>1</td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+    </table>
+
+    <table class="data-tab"> <!-- table 2 -->
+        <thead>
+            <tr><th>A</th><th>B</th><th>C</th><th>D</th></tr>
+        </thead>
+        <tbody>
+            <!-- 8 rows -->
+            <tr><td></td><td></td><td></td><td></td><td>1</td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+    </table>
+
+    <table class="data-tab"> <!-- table 3 -->
+        <thead>
+            <tr><th>A</th><th>B</th><th>C</th><th>D</th></tr>
+        </thead>        
+        <tbody>
+            <!-- 8 rows -->
+            <tr><td></td><td></td><td></td><td></td><td>1</td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+    </table>
+
+    <table class="data-tab"> <!-- table 4 -->
+        <thead>
+            <tr><th>A</th><th>B</th><th>C</th><th>D</th></tr>
+        </thead>        
+        <tbody>
+            <!-- 8 rows -->
+            <tr><td></td><td></td><td></td><td></td><td>1</td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+    </table>
+    </div>  
+    </div>  
+    </div>
+  
+   <div class="spacer"></div>
+   <div class="nnn">
+   <div class="tables-container_final">
+
+    <!-- 4 tables -->
+    <table class="final-tab">
+        <thead>
+
+            <tr><th>ABCD</th><th>EFGH</th><th>IJKL</th><th>MNOP</th></tr>
+
+        </thead>        
+        <tbody>
+            <!-- 8 rows -->
+            <tr><td></td><td></td><td></td><td></td><td>0</td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+    </table>
+
+    <table class="final-tab"> <!-- table 2 -->
+        <thead>
+            <tr><th>ABCD</th><th>EFGH</th><th>IJKL</th><th>MNOP</th></tr>
+        </thead>        
+        <tbody>
+            <!-- 8 rows -->
+            <tr><td></td><td></td><td></td><td></td><td>1</td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+    </table>
+    </div> 
+    </div>
+
+    <div class="m_content">
+   
+   <div class="content">
+    <p>
+      Np is not in p.
+    </p>
+
+    <p>
+      Group of table is not distinguishable in other tables via group of that table.
+    </p>
+
+    <p>
+      Example: group (abcd, efgh, ijkl, mnop) from table 00 is not distinguishable in table 01
+      via it groups (aeim, dfko, bgjn, chlp). 
+      In (aeim, dfko, bgjn, chlp) =(0,0,0,0), group (abcd, efgh, ijkl, mnop) still could be 8 possible combinations (0001, 0010, 0100 ,0111 ,1000 ,1011 ,1101 ,1110).
+    </p>
+    <p>
+      That lead to two result: without any information added there is no method faster than enumarate  all combinations of 8 variables.
+      (If more layer is add it will be barely any optimization)
+    </p>
+    <p>
+        And generate more information from tables also equivalent to solving hard to verify, hard to solve problem.
+    </p>
+   </div>
+   </div>
+   <footer>
+   <div class="footer-bottom">
+    <p>Contact info</p>
+   </div>
+   </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
